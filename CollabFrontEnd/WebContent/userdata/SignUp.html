@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>Registration form</h2>
+  {{regCtrl.message}}
+  <form  ng-submit='regCtrl.regUser()'>
+    <div class="form-group">
+      <label for="uname">UserName:</label>
+      <input type="text" class="form-control" id="uname" ng-model="regCtrl.user.uname" placeholder="Enter user name" name="username">
+    </div>
+     <div class="form-group">
+      <label for="emailid">Email:</label>
+      <input type="emailid" class="form-control" id="emailid" ng-model="regCtrl.user.emailid" placeholder="Enter email" name="emailid">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" ng-model="regCtrl.user.password" id="pwd" placeholder="Enter password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="mobileno">Contact NO:</label>
+      <input type="text" class="form-control" ng-model="regCtrl.user.mobilenono" id="mobileno" placeholder="Enter Contact Number" name="mobileno">
+    </div>
+     <div class="form-group">
+      <label for="urole">As a:</label>
+      <input type="radio" class="form-control" id="urole"  name="urole" ng-model="regCtrl.user.urole" value='student' >Student
+      <input type="radio" class="form-control" id="urole"  name="urole" ng-model="regCtrl.user.urole" value='faculty' >Faculty
+      
+    </div>
+    
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

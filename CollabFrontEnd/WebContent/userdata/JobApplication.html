@@ -1,0 +1,31 @@
+  <div class="container">
+  <h2>Registration form</h2>
+  {{regCtrl.message}}
+  <form  ng-submit='regCtrl.regUser()'>
+    <div class="form-group">
+      <label for="username">UserName:</label>
+      <input type="text" class="form-control" id="username" ng-model="regCtrl.user.username" placeholder="Enter user name" name="username">
+    </div>
+     <div class="form-group">
+      <label for="job">Job:</label>
+      <input type="text"class="form-control" id="job" ng-model="regCtrl.user.job" placeholder="Enter Job" name="job">
+    </div>
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" class="form-control" ng-model="regCtrl.user.date" id="date" placeholder="Enter Date" name="date">
+    </div>
+    <div class="form-group">
+      <label for="remarks">Remarks:</label>
+      <input type="text" class="form-control" ng-model="regCtrl.user.remarks" id="remarks" placeholder="Enter Remarks" name="remarks">
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <input type="text" class="form-control" ng-model="regCtrl.user.status" id="status" placeholder="Enter Status" name="status">
+    </div>
+    
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
